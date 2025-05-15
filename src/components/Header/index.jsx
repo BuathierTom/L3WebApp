@@ -1,13 +1,7 @@
-import { Link } from "react-router";
+import View from './view.jsx';
 
-export default function Header() {
+export default function Header(props) {
     return (
-        <div> 
-            Header
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-            </ul>
-        </div>
+        <View {...props} />
     );
-  }
+}
